@@ -33,35 +33,45 @@
         /* عدل على عرض الصورة */
         width: 250px;
       }
-      .one{
+      .img2{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+      }
+      .red{
+        text-align: center;
+        transition: all 0.4 ease-in-out;
+        font-size: 30px;
+        line-height: 95px;
+      }
+      .yellow{
         text-align: center;
         transition: all 0.4 ease-in-out;
         font-size: 30px;
         line-height: 90px;
       }
-      .two{
-        text-align: center;
-        transition: all 0.4 ease-in-out;
-        font-size: 30px;
-        line-height: 90px;
-      }
-      .thrie{
+      .greem{
         text-align: center;
         transition: all 0.4 ease-in-out;
         font-size: 30px;
         line-height: 90px;
       } 
-      .one:hover{
+      .red:hover .img2{
         background-color: red;
+        border-radius: 50%;
+        opacity: 1;
         
       }
-      .two:hover{
+      .yellow:hover{
         background-color: yellow;
         
         
       }
-      .thrie:hover{
+      .greem:hover{
         background-color: green;
+        
+        
         
         
         
@@ -85,6 +95,7 @@
     <!--     فوق CSS في img تلميح: ستغير خصائص عنصر     -->
     <!----------------====================---------------->
     <img class= "img1" src="./img/car.png" alt="car image" />
+    
 
     <!-------------------المطلوب الثالث------------------->
     <!--  غير لون خلفية الدوائر حتى يصبح شكل اشارة مرور -->
@@ -92,9 +103,9 @@
     <!-- style تلميح: ستغير خصائص الكلاسات اللي فوق داخل -->
     <!----------------====================---------------->
     <div class="square">
-      <div class="circle one" >قف</div>
-      <div class="circle two">استعد</div>
-      <div class="circle thrie">تحرك</div>
+      <div class="circle red"><img class = img2 src="./img/stop.png" alt= "car image"></div>
+      <div class="circle yellow">استعد</div>
+      <div class="circle greem">تحرك</div>
     </div>
 
     <!----------------====================---------------->
